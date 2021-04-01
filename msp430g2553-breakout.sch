@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "MSP430G2553 Breakout Board"
-Date "2020-09-18"
-Rev "A"
+Date "2021-04-01"
+Rev "A1"
 Comp ""
 Comment1 "Mini breakout board for the MSP430G2553 microcontroller"
 Comment2 ""
@@ -150,9 +150,9 @@ Wire Wire Line
 Text Label 3700 2700 0    50   ~ 0
 ~RESET
 Wire Wire Line
-	6800 2700 7250 2700
-Text Label 7250 2700 2    50   ~ 0
-SBWTDIO
+	6800 2700 7150 2700
+Text Label 7150 2700 2    50   ~ 0
+TEST
 Wire Wire Line
 	6800 2850 7150 2850
 Text Label 7150 2850 2    50   ~ 0
@@ -369,7 +369,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 2950 10100 2950
 Wire Wire Line
-	10350 3050 10000 3050
+	10350 3050 10100 3050
 $Comp
 L power:GND #PWR09
 U 1 1 5F404B8A
@@ -411,8 +411,8 @@ Text Label 10100 2850 0    50   ~ 0
 P3.7
 Text Label 10100 2950 0    50   ~ 0
 ~RESET
-Text Label 10000 3050 0    50   ~ 0
-SBWTDIO
+Text Label 10100 3050 0    50   ~ 0
+TEST
 $Comp
 L Device:R_Small R2
 U 1 1 5F421D7D
@@ -698,14 +698,14 @@ $EndComp
 Connection ~ 2300 2150
 Wire Wire Line
 	1750 4100 1800 4100
-Text Label 2200 4200 2    50   ~ 0
-SBWTDIO
-Text Label 2200 4300 2    50   ~ 0
+Text Label 2050 4200 2    50   ~ 0
+TEST
+Text Label 2050 4300 2    50   ~ 0
 ~RESET
 Wire Wire Line
-	1750 4200 2200 4200
+	1750 4200 2050 4200
 Wire Wire Line
-	1750 4300 2200 4300
+	1750 4300 2050 4300
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5F697AEE
@@ -1011,4 +1011,12 @@ Text Notes 3550 7450 0    40   ~ 0
 C2 and C3 must match the X1 specification\n\nR4 and R5 placed only if the crystal is populated
 Text Notes 9100 1100 0    40   ~ 0
 R2 and R3 placed only when the LFXT1 crystal is not in use
+Text Notes 1450 4200 2    50   ~ 0
+SBWTCK
+Text Notes 1450 4300 2    50   ~ 0
+SBWTDIO
+Text Notes 1450 4100 2    50   ~ 0
+VCC
+Text Notes 1450 4400 2    50   ~ 0
+GND
 $EndSCHEMATC
